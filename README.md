@@ -315,8 +315,6 @@ Choose and add an appropriate open-source license before permitting reuse. For e
 
 B.Tech in Computer Science and Engineering — Artificial Intelligence and Machine Learning
 
-- GitHub: [YOUR_GITHUB_USERNAME](YOUR_GITHUB_PROFILE_URL)
-- LinkedIn: [YOUR_LINKEDIN_PROFILE](YOUR_LINKEDIN_PROFILE_URL)
 
 ---
 
