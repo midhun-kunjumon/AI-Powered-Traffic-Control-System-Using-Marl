@@ -7,25 +7,6 @@ This project is an advanced, production-grade, AI-driven traffic signal control 
 <p align="center">
   <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python">
   <img src="https://img.shields.io/badge/YOLOv8-111F68?style=for-the-badge&logo=ultralytics&logoColor=white" alt="YOLOv8">
-  <img src="https://img.shields.io/badge/Reinforcement_Learning-8A2BE2?style=for-the-badge" alt="Reinforcement Learning">
-  <img src="https://img.shields.io/badge/ESP32-E7352C?style=for-the-badge&logo=espressif&logoColor=white" alt="ESP32">
-  <img src="https://img.shields.io/badge/SUMO-00A86B?style=for-the-badge" alt="SUMO">
-</p>
-
-## 📌 Overview
-
-Traditional traffic signal systems often rely on fixed timing schedules that cannot respond effectively to changing traffic conditions.
-
-This project introduces an **AI-powered adaptive traffic control system** that detects vehicles, analyzes traffic conditions, and dynamically adjusts signal timings using Reinforcement Learning. It also supports emergency vehicle prioritization and physical traffic light control through ESP32 hardware.
-
-The system integrates camera-based perception, intelligent decision-making, traffic simulation, and IoT-based actuation into a unified architecture.
-
-
-## 🛠️ Tech Stack
-
-<p align="center">
-  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python">
-  <img src="https://img.shields.io/badge/YOLOv8-111F68?style=for-the-badge&logo=ultralytics&logoColor=white" alt="YOLOv8">
   <img src="https://img.shields.io/badge/OpenCV-5C3EE8?style=for-the-badge&logo=opencv&logoColor=white" alt="OpenCV">
   <img src="https://img.shields.io/badge/Stable--Baselines3-8A2BE2?style=for-the-badge" alt="Stable-Baselines3">
   <img src="https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white" alt="PyTorch">
@@ -41,6 +22,19 @@ The system integrates camera-based perception, intelligent decision-making, traf
   <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" alt="Git">
   <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub">
 </p>
+
+
+## 📌 Overview
+
+Traditional traffic signal systems often rely on fixed timing schedules that cannot respond effectively to changing traffic conditions.
+
+This project introduces an **AI-powered adaptive traffic control system** that detects vehicles, analyzes traffic conditions, and dynamically adjusts signal timings using Reinforcement Learning. It also supports emergency vehicle prioritization and physical traffic light control through ESP32 hardware.
+
+The system integrates camera-based perception, intelligent decision-making, traffic simulation, and IoT-based actuation into a unified architecture.
+
+
+## 🛠️ Tech Stack
+
 
 | Category | Technologies |
 |---|---|
