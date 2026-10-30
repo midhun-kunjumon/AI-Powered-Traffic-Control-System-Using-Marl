@@ -4,6 +4,57 @@ This project is an advanced, production-grade, AI-driven traffic signal control 
 
 ---
 
+<p align="center">
+  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python">
+  <img src="https://img.shields.io/badge/YOLOv8-111F68?style=for-the-badge&logo=ultralytics&logoColor=white" alt="YOLOv8">
+  <img src="https://img.shields.io/badge/Reinforcement_Learning-8A2BE2?style=for-the-badge" alt="Reinforcement Learning">
+  <img src="https://img.shields.io/badge/ESP32-E7352C?style=for-the-badge&logo=espressif&logoColor=white" alt="ESP32">
+  <img src="https://img.shields.io/badge/SUMO-00A86B?style=for-the-badge" alt="SUMO">
+</p>
+
+## 📌 Overview
+
+Traditional traffic signal systems often rely on fixed timing schedules that cannot respond effectively to changing traffic conditions.
+
+This project introduces an **AI-powered adaptive traffic control system** that detects vehicles, analyzes traffic conditions, and dynamically adjusts signal timings using Reinforcement Learning. It also supports emergency vehicle prioritization and physical traffic light control through ESP32 hardware.
+
+The system integrates camera-based perception, intelligent decision-making, traffic simulation, and IoT-based actuation into a unified architecture.
+
+
+## 🛠️ Tech Stack
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python">
+  <img src="https://img.shields.io/badge/YOLOv8-111F68?style=for-the-badge&logo=ultralytics&logoColor=white" alt="YOLOv8">
+  <img src="https://img.shields.io/badge/OpenCV-5C3EE8?style=for-the-badge&logo=opencv&logoColor=white" alt="OpenCV">
+  <img src="https://img.shields.io/badge/Stable--Baselines3-8A2BE2?style=for-the-badge" alt="Stable-Baselines3">
+  <img src="https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white" alt="PyTorch">
+  <img src="https://img.shields.io/badge/Gymnasium-0081A5?style=for-the-badge" alt="Gymnasium">
+  <img src="https://img.shields.io/badge/SUMO-00A86B?style=for-the-badge" alt="SUMO">
+  <img src="https://img.shields.io/badge/Flask-222222?style=for-the-badge&logo=flask&logoColor=white" alt="Flask">
+  <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5">
+  <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3">
+  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript">
+  <img src="https://img.shields.io/badge/ESP32-E7352C?style=for-the-badge&logo=espressif&logoColor=white" alt="ESP32">
+  <img src="https://img.shields.io/badge/MQTT-660066?style=for-the-badge&logo=eclipsemosquitto&logoColor=white" alt="MQTT">
+  <img src="https://img.shields.io/badge/Serial_Communication-555555?style=for-the-badge" alt="Serial Communication">
+  <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" alt="Git">
+  <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub">
+</p>
+
+| Category | Technologies |
+|---|---|
+| Programming | Python |
+| Computer Vision | YOLOv8, OpenCV |
+| Reinforcement Learning | PPO, Stable-Baselines3, Multi-Agent RL |
+| Simulation | SUMO |
+| Backend | Flask, Python |
+| Frontend | HTML5, CSS3, JavaScript |
+| Hardware | ESP32-CAM, ESP32 Development Board |
+| Communication | Wi-Fi, HTTP, Serial Communication, MQTT (where configured) |
+| Development Tools | VS Code, Git, GitHub |
+
+
 ## 🎥 System Demonstration
 
 Watch the complete working demonstration of the traffic control system in action:
@@ -15,6 +66,34 @@ This video showcases:
 * **YOLOv8 object detection and vehicle tracking** running on live frames.
 * **Cooperative PPO MARL agent decision-making** and dynamic green time calculation.
 * **Bidirectional serial communication** with the ESP32 microcontroller actuating physical traffic light signals.
+
+## 🖥️ Project Screenshots
+
+Showcase the most important parts of your system here.
+
+### Live Traffic Monitoring Dashboard
+
+<p align="center">
+  <img src="docs/images/dashboard.png" alt="Live Traffic Monitoring Dashboard" width="90%">
+</p>
+
+### Vehicle Detection with YOLOv8
+
+<p align="center">
+  <img src="docs/images/vehicle-detection.png" alt="YOLOv8 Vehicle Detection" width="90%">
+</p>
+
+### Emergency Vehicle Priority
+
+<p align="center">
+  <img src="docs/images/emergency-priority.png" alt="Emergency Vehicle Priority Demonstration" width="90%">
+</p>
+
+### Physical Traffic Light Prototype
+
+<p align="center">
+  <img src="docs/images/hardware-prototype.jpg" alt="ESP32 Traffic Light Hardware Prototype" width="90%">
+</p>
 
 ---
 
@@ -103,6 +182,32 @@ The project consists of three main components: **Perception** (vehicle detection
 
 ---
 
+
+### Simulation and Reinforcement Learning
+
+The system also uses **SUMO** to simulate traffic scenarios and evaluate adaptive traffic control. The PPO-based multi-agent setup uses a shared policy across the configured traffic agents.
+
+<p align="center">
+  <img src="docs/images/rl-training-results.png" alt="Reinforcement Learning Training Results" width="85%">
+</p>
+
+*Optional: Replace the image above with your PPO training reward graph, SUMO simulation screenshot, or traffic performance comparison.*
+
+> **Implementation note:** This diagram represents the intended high-level architecture. Update the communication paths and components to match your actual implementation—for example, include MQTT only where it is genuinely used, and show SUMO as a separate simulation environment if it is not directly connected to the physical controller during live operation.
+
+
+### 🔄 Workflow
+
+1. **Data Capture:** ESP32-CAM devices capture traffic footage from different approaches.
+2. **Vehicle Detection:** YOLOv8 processes frames to detect vehicles and supported emergency vehicle classes.
+3. **Traffic Analysis:** The system derives traffic metrics such as vehicle counts and queue lengths.
+4. **Intelligent Decision-Making:** The PPO-based multi-agent controller selects signal actions based on the observed traffic state.
+5. **Emergency Preemption:** Emergency detection triggers the configured priority override.
+6. **Signal Actuation:** The Python controller communicates with the ESP32 to control physical traffic light LEDs.
+7. **Live Monitoring:** The dashboard displays available camera streams and traffic metrics.
+
+## ⚙️ Getting Started
+
 ## 🛠️ Installation & Setup
 
 ### 1. Prerequisites
@@ -142,3 +247,79 @@ To verify model loading, detection, and decision-making logic without physical h
 python traffic_controller.py --test
 ```
 This runs the controller for 20 cycles using synthetic video frames and displays dynamic green allocation.
+
+
+## 🔌 Hardware Setup
+
+The physical implementation uses ESP32-based hardware to connect camera capture and traffic signal control with the Python application.
+
+| Component | Purpose |
+|---|---|
+| ESP32-CAM | Capture traffic footage |
+| ESP32 Development Board | Control traffic light outputs |
+| Traffic Light LEDs | Represent intersection signal states |
+| Laptop / Host Computer | Run vehicle detection, RL control, and monitoring |
+| USB Serial Connection | Exchange control commands and status messages |
+
+<p align="center">
+  <img src="docs/images/hardware-setup.png" alt="Hardware Wiring and Setup" width="85%">
+</p>
+
+**Important:** Verify the GPIO mapping, serial protocol, and signal transition logic against your actual hardware implementation before running the controller.
+
+## 📊 Results and Evaluation
+
+Use this section to present measured results from your SUMO simulations or hardware tests.
+
+| Metric | Result |
+|---|---|
+| Average Waiting Time | `ADD MEASURED RESULT` |
+| Average Queue Length | `ADD MEASURED RESULT` |
+| Average Vehicle Throughput | `ADD MEASURED RESULT` |
+| Emergency Detection Performance | `ADD MEASURED RESULT` |
+| Comparison with Fixed-Time Signals | `ADD MEASURED RESULT` |
+
+<p align="center">
+  <img src="docs/images/performance-comparison.png" alt="Traffic Control Performance Comparison" width="90%">
+</p>
+
+> Include only results you have measured. Document the simulation settings, test duration, traffic demand, and baseline used for fair comparison.
+
+## 🚀 Future Enhancements
+
+- Improve coordination between neighboring intersections.
+- Expand emergency vehicle detection and priority handling.
+- Evaluate the controller under different traffic demand scenarios.
+- Add historical analytics and performance visualizations to the dashboard.
+- Improve fault handling and communication reliability between the host and ESP32.
+- Evaluate the system under larger simulated road networks.
+
+## 🤝 Contributing
+
+Contributions, suggestions, and improvements are welcome.
+
+1. Fork the repository.
+2. Create a feature branch.
+3. Commit your changes.
+4. Open a pull request describing your contribution.
+
+## 📜 License
+
+This project is currently provided for educational and research purposes.
+
+Choose and add an appropriate open-source license before permitting reuse. For example, you can add an MIT License by creating a `LICENSE` file.
+
+## 👨‍💻 Author
+
+**Midhun Kunjumon**
+
+B.Tech in Computer Science and Engineering — Artificial Intelligence and Machine Learning
+
+- GitHub: [YOUR_GITHUB_USERNAME](YOUR_GITHUB_PROFILE_URL)
+- LinkedIn: [YOUR_LINKEDIN_PROFILE](YOUR_LINKEDIN_PROFILE_URL)
+
+---
+
+<p align="center">
+  If you find this project interesting, consider giving the repository a ⭐
+</p>
