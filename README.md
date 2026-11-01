@@ -53,7 +53,9 @@ The system integrates camera-based perception, intelligent decision-making, traf
 
 Watch the complete working demonstration of the traffic control system in action:
 
-[📁 View Demonstration Video (Complete_Working_video.mp4)](./Complete_Working_video.mp4)
+[📁 View Demonstration Video (Complete_Working_video.mp4)](https://www.youtube.com/watch?v=A8SE4DjzUhE)
+
+
 
 This video showcases:
 * **Real-time ESP32-CAM HTTP snapshot capture** from four direction lanes (North, East, South, West).
