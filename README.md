@@ -69,12 +69,12 @@ This video showcases:
 
 ### Vehicle Detection with YOLOv8
 
-<img width="287" height="285" alt="Screenshot 2026-11-02 100558" src="https://github.com/user-attachments/assets/95a432a8-dad4-49e0-81b3-4561ff478b1b" />
+<img width="500" height="480" alt="Screenshot 2026-11-02 100558" src="https://github.com/user-attachments/assets/95a432a8-dad4-49e0-81b3-4561ff478b1b" />
 
 
 ### Traffic Simulation (SUMO)
 
-<img width="1153" height="1316" alt="WhatsApp Image 2026-11-02 at 10 28 03 AM" src="https://github.com/user-attachments/assets/ffc0c07c-0fbe-4e8d-8bb8-62702b25f7f4" />
+<img width="900" height="1000" alt="WhatsApp Image 2026-11-02 at 10 28 03 AM" src="https://github.com/user-attachments/assets/ffc0c07c-0fbe-4e8d-8bb8-62702b25f7f4" />
 
 
 ---
@@ -240,7 +240,7 @@ The physical implementation uses ESP32-based hardware to connect camera capture 
 
 ## 📊 Results and Evaluation
 
-<img width="324" height="99" alt="Screenshot 2026-11-02 103119" src="https://github.com/user-attachments/assets/7db0db72-86cb-40a9-bd5e-e9c065d5491c" />
+<img width="600" height="300" alt="Screenshot 2026-11-02 103119" src="https://github.com/user-attachments/assets/7db0db72-86cb-40a9-bd5e-e9c065d5491c" />
 
 
 ## 🚀 Future Enhancements
