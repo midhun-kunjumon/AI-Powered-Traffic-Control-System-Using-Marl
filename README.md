@@ -63,33 +63,19 @@ This video showcases:
 * **Cooperative PPO MARL agent decision-making** and dynamic green time calculation.
 * **Bidirectional serial communication** with the ESP32 microcontroller actuating physical traffic light signals.
 
-## 🖥️ Project Screenshots
+### Physical Prototype
 
-Showcase the most important parts of your system here.
-
-### Live Traffic Monitoring Dashboard
-
-<p align="center">
-  <img src="docs/images/dashboard.png" alt="Live Traffic Monitoring Dashboard" width="90%">
-</p>
+<img width="1600" height="722" alt="WhatsApp Image 2026-11-02 at 10 20 24 AM" src="https://github.com/user-attachments/assets/132e01b3-5ee6-4db4-9f24-b9e16b2bfabf" />
 
 ### Vehicle Detection with YOLOv8
 
-<p align="center">
-  <img src="docs/images/vehicle-detection.png" alt="YOLOv8 Vehicle Detection" width="90%">
-</p>
+<img width="287" height="285" alt="Screenshot 2026-11-02 100558" src="https://github.com/user-attachments/assets/95a432a8-dad4-49e0-81b3-4561ff478b1b" />
 
-### Emergency Vehicle Priority
 
-<p align="center">
-  <img src="docs/images/emergency-priority.png" alt="Emergency Vehicle Priority Demonstration" width="90%">
-</p>
+### Traffic Simulation (SUMO)
 
-### Physical Traffic Light Prototype
+<img width="1153" height="1316" alt="WhatsApp Image 2026-11-02 at 10 28 03 AM" src="https://github.com/user-attachments/assets/ffc0c07c-0fbe-4e8d-8bb8-62702b25f7f4" />
 
-<p align="center">
-  <img src="docs/images/hardware-prototype.jpg" alt="ESP32 Traffic Light Hardware Prototype" width="90%">
-</p>
 
 ---
 
@@ -183,14 +169,6 @@ The project consists of three main components: **Perception** (vehicle detection
 
 The system also uses **SUMO** to simulate traffic scenarios and evaluate adaptive traffic control. The PPO-based multi-agent setup uses a shared policy across the configured traffic agents.
 
-<p align="center">
-  <img src="docs/images/rl-training-results.png" alt="Reinforcement Learning Training Results" width="85%">
-</p>
-
-*Optional: Replace the image above with your PPO training reward graph, SUMO simulation screenshot, or traffic performance comparison.*
-
-> **Implementation note:** This diagram represents the intended high-level architecture. Update the communication paths and components to match your actual implementation—for example, include MQTT only where it is genuinely used, and show SUMO as a separate simulation environment if it is not directly connected to the physical controller during live operation.
-
 
 ### 🔄 Workflow
 
@@ -257,29 +235,13 @@ The physical implementation uses ESP32-based hardware to connect camera capture 
 | Laptop / Host Computer | Run vehicle detection, RL control, and monitoring |
 | USB Serial Connection | Exchange control commands and status messages |
 
-<p align="center">
-  <img src="docs/images/hardware-setup.png" alt="Hardware Wiring and Setup" width="85%">
-</p>
 
 **Important:** Verify the GPIO mapping, serial protocol, and signal transition logic against your actual hardware implementation before running the controller.
 
 ## 📊 Results and Evaluation
 
-Use this section to present measured results from your SUMO simulations or hardware tests.
+<img width="324" height="99" alt="Screenshot 2026-11-02 103119" src="https://github.com/user-attachments/assets/7db0db72-86cb-40a9-bd5e-e9c065d5491c" />
 
-| Metric | Result |
-|---|---|
-| Average Waiting Time | `ADD MEASURED RESULT` |
-| Average Queue Length | `ADD MEASURED RESULT` |
-| Average Vehicle Throughput | `ADD MEASURED RESULT` |
-| Emergency Detection Performance | `ADD MEASURED RESULT` |
-| Comparison with Fixed-Time Signals | `ADD MEASURED RESULT` |
-
-<p align="center">
-  <img src="docs/images/performance-comparison.png" alt="Traffic Control Performance Comparison" width="90%">
-</p>
-
-> Include only results you have measured. Document the simulation settings, test duration, traffic demand, and baseline used for fair comparison.
 
 ## 🚀 Future Enhancements
 
